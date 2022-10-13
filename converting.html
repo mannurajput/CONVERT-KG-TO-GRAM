@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title> 
+ <script>
+    function convert(){
+           var km=document.getElementById('data').value;
+        
+       const metre=1000
+        var result=km*metre;
+        document.getElementById('res').innerText=result+"metre";
+        
+    }
+ </script>
+</head>  
+<body style="background-color:aquamarine">
+    <h1>CONVERT KM TO METRE</h1>
+    <input type="number" step="any" id="data">km
+    <button onClick="convert()">Convert</button>
+    <h2 id="res"></h2>
+</body>
+</html>
